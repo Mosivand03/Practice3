@@ -17,5 +17,18 @@ Console.WriteLine($"Hoghoogh dariafti: {hoghooghDariafti}$");
 }
 catch(OverflowException)
 {
-    Console.Write("Adad nadorost vared shodeh ast");
+    Console.WriteLine("Adad nadorost vared shodeh ast");
 }
+catch(FormatException)
+{
+    Console.WriteLine("Adadi vared nashodeh ast ");
+}
+catch
+{
+    Console.WriteLine("Ba poshtiban tamas begirid");
+}
+finally
+{
+    Console.WriteLine("Paian");
+}
+Console.WriteLine("Mamnon az tavgoh shoma");
