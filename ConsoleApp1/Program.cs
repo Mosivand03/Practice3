@@ -12,7 +12,7 @@ var dastmozdKhales=saat*3.5;
 var maliat=(dastmozdKhales*5)/100;
 var hoghooghDariafti=dastmozdKhales-maliat;
 Console.WriteLine($"Hoghoogh Khales: {dastmozdKhales}$");
-Console.WriteLine($"Maliat: {maliat}%"); 
+Console.WriteLine($"Maliat: {maliat}$"); 
 Console.WriteLine($"Hoghoogh dariafti: {hoghooghDariafti}$");
 }
 catch(OverflowException)
@@ -32,3 +32,16 @@ finally
     Console.WriteLine("Paian");
 }
 Console.WriteLine("Mamnon az tavgoh shoma");
+await Task.Delay(10000);
+// Tamrin 2
+Console.Clear();
+Console.WriteLine("Number: ");
+var number=Convert.ToInt32(Console.ReadLine());
+var number1=number%10;
+var number2=((number-number1)/10)%10;
+var number3=((number-((number2*10)+number1))/100)%10;
+var number4=(number-((number3*100)+(number2*10)+(number1)))/1000;
+Console.Write(number1);
+Console.Write(number2);
+Console.Write(number3);
+Console.Write(number4);
