@@ -7,7 +7,7 @@ Console.Clear();
 try
 {
     Console.Write("Tedad saat: ");
-    var saat = Convert.ToDouble(Console.ReadLine());
+    
 }
 catch
 {
