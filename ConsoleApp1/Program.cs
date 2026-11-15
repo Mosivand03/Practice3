@@ -14,6 +14,7 @@ catch
     
 }
 try{
+    var saat = Convert.ToDouble(Console.ReadLine());
     var dastmozdKhales = saat * 3.5;
     var maliat = (dastmozdKhales * 5) / 100;
     var hoghooghDariafti = dastmozdKhales - maliat;
