@@ -46,20 +46,19 @@ Console.WriteLine("Namaiesh akse adad 4 raghami ");
 try
 {
     Console.Write("Number: ");
-
+}
+catch
+{
+    
+}    
+try
+{
 
     var number = Convert.ToInt32(Console.ReadLine());
     var number1 = number % 10;
     var number2 = ((number - number1) / 10) % 10;
     var number3 = ((number - ((number2 * 10) + number1)) / 100) % 10;
     var number4 = (number - ((number3 * 100) + (number2 * 10) + (number1))) / 1000;
-}
-catch
-{
-    
-}
-try
-{
     Console.Write(number1);
     Console.Write(number2);
     Console.Write(number3);
